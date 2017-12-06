@@ -1,5 +1,3 @@
-
-
 import json
 
 class JSONcreation: 
@@ -11,7 +9,7 @@ class JSONcreation:
 
 
 	def jsonnotation(self):
-		json_string0 = '{"author":"%s", "title":"%s","body":"%s"}' % (name, title, text)
+		json_string0 = '{"author":"%s", "title":"%s","body":"%s"}' % (self.name, self.title, self.text)
 		json_string = json_string0
 		return json_string 
 
@@ -33,4 +31,3 @@ json_string = JSONnotation.jsonnotation()
 #print 'Your name is ' + parsed_json['author']
 #print 'Title of the message is ' + parsed_json['title']
 #print 'Message text is ' + parsed_json['body']
-
